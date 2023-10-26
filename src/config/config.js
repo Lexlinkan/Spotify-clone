@@ -1,7 +1,7 @@
 console.log(import.meta.env)
 export const authEndpoint = "https://accounts.spotify.com/authorize";
 export const clientId = import.meta.env.VITE_CLIENT_ID;
-export const liveURL = "https://lexlinkan-spotify-clone.vercel.app/";
+export const liveURL = import.meta.env.VITE_LIVE_URL;
 export const devURL = 'http://localhost:5173/';
 export const redirectURL = import.meta.env.PROD === 'production' ? liveURL : devURL;
 export const scopes = [
